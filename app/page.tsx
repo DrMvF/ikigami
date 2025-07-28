@@ -7,45 +7,45 @@ export default function Home() {
     <div className="flex flex-col min-h-screen items-center justify-between p-8 sm:p-20 font-cm">
       <main className="flex flex-col items-center text-center">
         <h1 className="text-3xl sm:text-4xl font-bold mb-2">
-          Radical Sensitive Leadership
+          Ikigami App
         </h1>
         <p className="text-lg sm:text-xl">
-          Mental clarity. Inner alignment. Ethical growth.
+          Ikigai finder and personal compass for high performers.
         </p>
 
         <div className="h-12 sm:h-16" />
 
         <div className="flex flex-col gap-4 w-full max-w-xs">
           <a
-            href="/deepflow"
-            onClick={() => track('click_deep_flow')}
+            href="/meditation"
+            onClick={() => track('click_meditation')}
             className="rounded-full bg-black text-white px-6 py-3 text-base sm:text-lg text-center hover:bg-[#383838] transition-colors"
           >
-            Deep Flow
+            Meditation
           </a>
 
           <a
-            href="/radicalweekly"
-            onClick={() => track('click_radical_weekly')}
+            href="/questions"
+            onClick={() => track('click_questions')}
             className="rounded-full bg-[#4b4b4b] text-white px-6 py-3 text-base sm:text-lg text-center hover:bg-[#5e5e5e] transition-colors"
           >
-            Radical Weekly
+            Questions
           </a>
 
           <a
-            href="/foundingcircle"
-            onClick={() => track('click_founding_circle')}
+            href="/reflection"
+            onClick={() => track('click_reflection')}
             className="rounded-full bg-[#e5e5e5] text-black px-6 py-3 text-base sm:text-lg text-center hover:bg-[#ccc] transition-colors"
           >
-            Founding Circle
+            Reflection
           </a>
 
           <a
-            href="/offer"
-            onClick={() => track('click_white_space')}
+            href="/navigator"
+            onClick={() => track('click_navigator')}
             className="rounded-full border border-black px-6 py-3 text-base sm:text-lg text-center hover:bg-black hover:text-white transition-colors"
           >
-            White Space
+            Navigator
           </a>
         </div>
       </main>

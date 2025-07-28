@@ -11,7 +11,7 @@ export default function PrivacyPage() {
       <p className="mb-4">
         Dr. Miriam von Felbert<br/>
         Schwanenweg 19, 24558 Henstedt‑Ulzburg, Germany<br/>
-        Email: hello@radicalsensitiveleadership.com
+        Email: info@ikigami.de
       </p>
 
       <h2 className="text-xl font-semibold mt-8 mb-4 text-left">2. Data Collected</h2>
@@ -55,7 +55,7 @@ export default function PrivacyPage() {
 
       <h2 className="text-xl font-semibold mt-8 mb-4 text-left">9. Contact & Complaints</h2>
       <p className="mb-4">
-        For questions or requests, contact us at hello@radicalsensitiveleadership.com.<br/>
+        For questions or requests, contact us at info@ikigami.de.<br/>
         You also have the right to lodge a complaint with a data protection supervisory authority.
       </p>
 

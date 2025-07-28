@@ -11,7 +11,7 @@ export default function LegalPage() {
 
       <p className="mb-4"><strong>Contact</strong><br />
       Phone: +49 (0) 151 65122333<br />
-      Email: hello@radicalsensitiveleadership.com</p>
+      Email: info@ikigami.de</p>
 
       <p className="mb-4"><strong>VAT ID</strong><br />
       DE366062230 (according to § 27a UStG)</p>
