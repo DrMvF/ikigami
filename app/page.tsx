@@ -49,7 +49,7 @@ export default function Page() {
         </div>
 
         {/* App Store & Google Play badges */}
-        <div className="flex flex-row gap-4 mb-12">
+        <div className="flex flex-row gap-4 mb-8">
           <a
             href="https://apps.apple.com/de/app/ikigami/id6479921683"
             target="_blank"
@@ -78,7 +78,7 @@ export default function Page() {
         </div>
       </main>
 
-      <footer className="flex flex-wrap justify-center gap-4 mt-20 text-sm text-center">
+      <footer className="flex flex-wrap justify-center gap-4 mt-8 text-sm text-center">
         <a href="/legal" className="hover:underline">● Legal Notice</a>
         <a href="/privacy" className="hover:underline">● Privacy Policy</a>
         <a href="/terms" className="hover:underline">● Terms & Conditions</a>
