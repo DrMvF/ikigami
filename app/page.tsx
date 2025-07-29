@@ -1,52 +1,48 @@
 'use client';
 
-import Image from 'next/image';
 import { track } from '@vercel/analytics';
 
 export default function Page() {
   return (
     <div className="flex flex-col min-h-screen items-center justify-between p-8 sm:p-20 font-cm">
       <main className="flex flex-col items-center text-center">
-        <h1 className="text-3xl sm:text-4xl font-bold mb-2">
-          Ikigami App
-        </h1>
+        <h1 className="text-3xl sm:text-4xl font-bold mb-2">Ikigami App</h1>
         <p className="text-lg sm:text-xl">
           Ikigai finder and personal compass for high performers.
         </p>
 
         <div className="h-12 sm:h-16" />
 
-        {/* Download Badges */}
-        <div className="flex flex-wrap justify-center gap-4 mb-12">
+        {/* App Store & Google Play badges */}
+        <div className="flex flex-row gap-4 mb-12">
           <a
             href="https://apps.apple.com/de/app/ikigami/id6479921683"
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() => track('click_appstore')}
           >
-            <Image
+            <img
               src="/badges/appstore.svg"
               alt="Download on the App Store"
-              width={160}
-              height={48}
-              className="h-12 w-auto"
+              className="w-40 h-40 object-contain"
             />
           </a>
+
           <a
-            href="https://play.google.com/store/apps/details?id=de.ikigami.app&pcampaignid=web_share&pli=1"
+            href="https://play.google.com/store/apps/details?id=de.ikigami.app"
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() => track('click_googleplay')}
           >
-            <Image
+            <img
               src="/badges/googleplay.svg"
               alt="Get it on Google Play"
-              width={160}
-              height={48}
-              className="h-12 w-auto"
+              className="w-40 h-40 object-contain"
             />
           </a>
         </div>
 
-        {/* Navigation Buttons */}
+        {/* Buttons */}
         <div className="flex flex-col gap-4 w-full max-w-xs">
           <a
             href="/meditation"
@@ -82,7 +78,6 @@ export default function Page() {
         </div>
       </main>
 
-      {/* Footer */}
       <footer className="flex flex-wrap justify-center gap-4 mt-20 text-sm text-center">
         <a href="/legal" className="hover:underline">● Legal Notice</a>
         <a href="/privacy" className="hover:underline">● Privacy Policy</a>
