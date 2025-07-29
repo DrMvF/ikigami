@@ -1,3 +1,5 @@
+import DeviceFrame from '@/components/DeviceFrame';
+
 export const metadata = {
   title: 'Meditation – Ikigami App',
   description:
@@ -62,6 +64,12 @@ export default function MeditationPage() {
       <p className="text-lg mb-6 italic">
         → You’ll hear it only when you need it – not before.
       </p>
+
+      {/* 📱 Screenshot in DeviceFrame */}
+      <DeviceFrame
+        src="/screens/meditation.png"
+        alt="Screenshot of Ikigami Meditation screen"
+      />
 
       <div className="mt-16">
         <a href="/" className="text-sm underline hover:opacity-60">
