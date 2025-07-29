@@ -1,3 +1,5 @@
+import DeviceFrame from '@/components/DeviceFrame';
+
 export const metadata = {
   title: 'Navigator – Ikigami App',
   description:
@@ -62,6 +64,9 @@ export default function NavigatorPage() {
         It’s not about more goals. It’s about less waste.
         Less drift. More signal.
       </p>
+
+      {/* 📱 Screenshot */}
+      <DeviceFrame src="/screens/navigator.png" alt="Navigator screenshot" />
 
       <div className="mt-16">
         <a href="/" className="text-sm underline hover:opacity-60">

@@ -61,18 +61,27 @@ export default function QuestionsPage() {
         The structure creates safety. The questions unlock resonance. The act of writing reclaims meaning. This is where your Ikigai becomes real — not as a concept, but as lived experience.
       </p>
 
+      {/* 📱 Screenshot-Galerie mit kleineren Frames */}
+      <div className="mt-16 grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="scale-[0.85]">
+          <DeviceFrame src="/screens/quest_love.png" alt="Love dimension screenshot" />
+        </div>
+        <div className="scale-[0.85]">
+          <DeviceFrame src="/screens/quest_good.png" alt="Skill dimension screenshot" />
+        </div>
+        <div className="scale-[0.85]">
+          <DeviceFrame src="/screens/quest_paid.png" alt="Finance dimension screenshot" />
+        </div>
+        <div className="scale-[0.85]">
+          <DeviceFrame src="/screens/quest_world.png" alt="World dimension screenshot" />
+        </div>
+      </div>
+
+      {/* Back to Home */}
       <div className="mt-16">
         <a href="/" className="text-sm underline hover:opacity-60">
           ← Back to Home
         </a>
-      </div>
-
-      {/* 🖼 Screenshot-Galerie */}
-      <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-        <DeviceFrame src="/screens/quest_love.png" alt="Love dimension screenshot" />
-        <DeviceFrame src="/screens/quest_good.png" alt="Skill dimension screenshot" />
-        <DeviceFrame src="/screens/quest_paid.png" alt="Finance dimension screenshot" />
-        <DeviceFrame src="/screens/quest_world.png" alt="World dimension screenshot" />
       </div>
     </main>
   );

@@ -1,3 +1,5 @@
+import DeviceFrame from '@/components/DeviceFrame';
+
 export const metadata = {
   title: 'Reflection – Ikigami App',
   description:
@@ -63,6 +65,9 @@ export default function ReflectionPage() {
         The intelligence here is not artificial. It’s relational.
         Between your voice, your timing, your patterns — and your own growth.
       </p>
+
+      {/* 📱 Screenshot */}
+      <DeviceFrame src="/screens/analyze.png" alt="Reflection analysis screenshot" />
 
       <div className="mt-16">
         <a href="/" className="text-sm underline hover:opacity-60">
