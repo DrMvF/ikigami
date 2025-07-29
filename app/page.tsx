@@ -1,34 +1,7 @@
 'use client';
 
+import Image from 'next/image';
 import { track } from '@vercel/analytics';
-
-const AppStoreBadge = () => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 120 40"
-    className="h-12 sm:h-14 w-auto"
-  >
-    <image
-      href="/badges/appstore.svg"
-      width="120"
-      height="40"
-    />
-  </svg>
-);
-
-const GooglePlayBadge = () => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="30 336.7 150 43.3"
-    className="h-12 sm:h-14 w-auto"
-  >
-    <image
-      href="/badges/googleplay.svg"
-      width="150"
-      height="43.3"
-    />
-  </svg>
-);
 
 export default function Page() {
   return (
@@ -37,27 +10,39 @@ export default function Page() {
         <h1 className="text-3xl sm:text-4xl font-bold mb-2">
           Ikigami App
         </h1>
-        <p className="text-lg sm:text-xl mb-6">
+        <p className="text-lg sm:text-xl">
           Ikigai finder and personal compass for high performers.
         </p>
 
+        <div className="h-12 sm:h-16" />
+
         {/* Download Badges */}
-        <div className="flex flex-col sm:flex-row gap-4 mb-10">
+        <div className="flex flex-wrap justify-center gap-4 mb-12">
           <a
             href="https://apps.apple.com/de/app/ikigami/id6479921683"
             target="_blank"
             rel="noopener noreferrer"
-            onClick={() => track('click_appstore')}
           >
-            <AppStoreBadge />
+            <Image
+              src="/badges/appstore.svg"
+              alt="Download on the App Store"
+              width={160}
+              height={48}
+              className="h-12 w-auto"
+            />
           </a>
           <a
-            href="https://play.google.com/store/apps/details?id=de.ikigami.app"
+            href="https://play.google.com/store/apps/details?id=de.ikigami.app&pcampaignid=web_share&pli=1"
             target="_blank"
             rel="noopener noreferrer"
-            onClick={() => track('click_playstore')}
           >
-            <GooglePlayBadge />
+            <Image
+              src="/badges/googleplay.svg"
+              alt="Get it on Google Play"
+              width={160}
+              height={48}
+              className="h-12 w-auto"
+            />
           </a>
         </div>
 
