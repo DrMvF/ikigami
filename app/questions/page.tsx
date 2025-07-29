@@ -1,3 +1,5 @@
+import DeviceFrame from '@/components/DeviceFrame';
+
 export const metadata = {
   title: 'Questions – Ikigami App',
   description:
@@ -63,6 +65,14 @@ export default function QuestionsPage() {
         <a href="/" className="text-sm underline hover:opacity-60">
           ← Back to Home
         </a>
+      </div>
+
+      {/* 🖼 Screenshot-Galerie */}
+      <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <DeviceFrame src="/screens/quest_love.png" alt="Love dimension screenshot" />
+        <DeviceFrame src="/screens/quest_good.png" alt="Skill dimension screenshot" />
+        <DeviceFrame src="/screens/quest_paid.png" alt="Finance dimension screenshot" />
+        <DeviceFrame src="/screens/quest_world.png" alt="World dimension screenshot" />
       </div>
     </main>
   );
