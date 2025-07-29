@@ -13,37 +13,8 @@ export default function Page() {
 
         <div className="h-12 sm:h-16" />
 
-        {/* App Store & Google Play badges */}
-        <div className="flex flex-row gap-4 mb-12">
-          <a
-            href="https://apps.apple.com/de/app/ikigami/id6479921683"
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={() => track('click_appstore')}
-          >
-            <img
-              src="/badges/appstore.svg"
-              alt="Download on the App Store"
-              className="w-40 h-40 object-contain"
-            />
-          </a>
-
-          <a
-            href="https://play.google.com/store/apps/details?id=de.ikigami.app"
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={() => track('click_googleplay')}
-          >
-            <img
-              src="/badges/googleplay.svg"
-              alt="Get it on Google Play"
-              className="w-40 h-40 object-contain"
-            />
-          </a>
-        </div>
-
         {/* Buttons */}
-        <div className="flex flex-col gap-4 w-full max-w-xs">
+        <div className="flex flex-col gap-4 w-full max-w-xs mb-8">
           <a
             href="/meditation"
             onClick={() => track('click_meditation')}
@@ -74,6 +45,35 @@ export default function Page() {
             className="rounded-full border border-black px-6 py-3 text-base sm:text-lg text-center hover:bg-black hover:text-white transition-colors"
           >
             Navigator
+          </a>
+        </div>
+
+        {/* App Store & Google Play badges */}
+        <div className="flex flex-row gap-4 mb-12">
+          <a
+            href="https://apps.apple.com/de/app/ikigami/id6479921683"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => track('click_appstore')}
+          >
+            <img
+              src="/badges/appstore.svg"
+              alt="Download on the App Store"
+              className="w-40 h-40 object-contain"
+            />
+          </a>
+
+          <a
+            href="https://play.google.com/store/apps/details?id=de.ikigami.app"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => track('click_googleplay')}
+          >
+            <img
+              src="/badges/googleplay.svg"
+              alt="Get it on Google Play"
+              className="w-40 h-40 object-contain"
+            />
           </a>
         </div>
       </main>
