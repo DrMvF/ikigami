@@ -2,7 +2,35 @@
 
 import { track } from '@vercel/analytics';
 
-export default function Home() {
+const AppStoreBadge = () => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 120 40"
+    className="h-12 sm:h-14 w-auto"
+  >
+    <image
+      href="/badges/appstore.svg"
+      width="120"
+      height="40"
+    />
+  </svg>
+);
+
+const GooglePlayBadge = () => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="30 336.7 150 43.3"
+    className="h-12 sm:h-14 w-auto"
+  >
+    <image
+      href="/badges/googleplay.svg"
+      width="150"
+      height="43.3"
+    />
+  </svg>
+);
+
+export default function Page() {
   return (
     <div className="flex flex-col min-h-screen items-center justify-between p-8 sm:p-20 font-cm">
       <main className="flex flex-col items-center text-center">
@@ -13,7 +41,7 @@ export default function Home() {
           Ikigai finder and personal compass for high performers.
         </p>
 
-        {/* App Download Badges */}
+        {/* Download Badges */}
         <div className="flex flex-col sm:flex-row gap-4 mb-10">
           <a
             href="https://apps.apple.com/de/app/ikigami/id6479921683"
@@ -21,11 +49,7 @@ export default function Home() {
             rel="noopener noreferrer"
             onClick={() => track('click_appstore')}
           >
-            <img
-              src="/badges/appstore.svg"
-              alt="Download on the App Store"
-              className="h-12 sm:h-14"
-            />
+            <AppStoreBadge />
           </a>
           <a
             href="https://play.google.com/store/apps/details?id=de.ikigami.app"
@@ -33,11 +57,7 @@ export default function Home() {
             rel="noopener noreferrer"
             onClick={() => track('click_playstore')}
           >
-            <img
-              src="/badges/googleplay.svg"
-              alt="Get it on Google Play"
-              className="h-12 sm:h-14"
-            />
+            <GooglePlayBadge />
           </a>
         </div>
 
